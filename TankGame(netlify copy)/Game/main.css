@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+* {
+    font-family: 'Open Sans', sans-serif;
+}
+
+body, html {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    background-color: rgb(40, 40, 40);
+    color: white;
+
+    overflow: hidden;
+}
+
+.Game-Holder {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Game-Screen {
+    background-color: rgb(50, 50, 50);
+}
+
+.Main-Screen {
+    width: 100%;
+    height: 100%;
+
+    background-image: linear-gradient(to bottom right,rgb(250, 75, 75), rgb(250, 105, 75));
+    position: absolute;
+}
+
+.Main-Title {
+    width: 100%;
+    height: 60%;
+
+    font-size: 56px;
+    font-weight: 600;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+}
+
+.Main-Buttons {
+    width: 100%;
+    height: 80%;
+
+    font-size: 48px;
+    font-weight: 600;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+   
+}
+
+.Main-Button-Multiplayer, .Main-Button-Singleplayer {
+    font-size: 24px;
+    
+    padding: 12px 20px;
+    margin: 5px;
+
+    border: none;
+    border-radius: 5px;
+
+    cursor: pointer;
+}
+
+.Main-Button-Multiplayer {
+    /* background-image: linear-gradient(to left, rgb(250, 125, 125), rgb(250, 95, 95)); */
+    background-color: transparent;
+
+    color: white;
+
+    border: 10px solid;
+    border-image-slice: 1;
+    border-width: 5px;
+
+    border-image-source: linear-gradient(to left, rgb(250, 125, 125), rgb(250, 95, 95));
+}
+
+.Main-Button-Singleplayer {
+    /* background-image: linear-gradient(to left, rgb(250, 75, 75), rgb(250, 105, 75)); */
+    background-color: transparent;
+
+    color: white;
+
+    border: 10px solid;
+    border-image-slice: 1;
+    border-width: 5px;
+
+    border-image-source: linear-gradient(to right, rgb(100, 150, 200), rgb(100, 100, 250));
+}
+
+/* Second option */
+
+.Main-Split-Screen {
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+    /* display: flex; */
+}
+
+.Main-Card-One, .Main-Card-Two {
+    width: 50%;
+    height: 100%;
+
+    cursor: pointer;
+    position: absolute;
+
+    transition: left 0.5s ease-out, width 0.5s ease-in-out;
+}
+
+.Main-Card-One {
+    background-color: rgb(250, 75, 75);
+    right: 50%;
+
+    z-index: 1;
+}
+
+.Main-Card-Two {    
+    background-color: rgb(90, 80, 250);
+    left: 50%;
+
+    z-index: 0;
+}
+
+.Card-One, .Card-Two {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    position: absolute;
+
+    align-items: center;
+    justify-content: center;
+
+    flex-direction: column;
+    
+    transform: translateY(-10%);
+    transition: transform 0.5s ease-out;
+}
+
+.Card-One-Title, .Card-Two-Title {
+    font-size: 2.5vh;
+}
+
+.Card-Icon {
+    font-size: 15vh;
+}

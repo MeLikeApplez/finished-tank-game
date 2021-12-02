@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="shortcut icon" href="https://shorturl.at/tyCDS" type="image/x-icon">
+    <title>Tanks! ~ Singleplayer (Demo)</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- cdn separate libraries -->
+    <script src='https://cdn.jsdelivr.net/npm/mathjs@10.0.0/lib/browser/math.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/tone/14.8.32/Tone.js'></script>
+    <script src='https://cdn.jsdelivr.net/npm/sat@0.9.0/SAT.js'></script>
+
+    <!-- Physics Libraries -->
+    <script src='./vector.js'></script>
+    <script src='./animate.js'></script>
+    <script src='./velocity.js'></script>
+    <script src='./world.js'></script>
+    <script src='./engine.js'></script>
+
+    <!-- Main -->
+    <script src='./keyboard.js'></script>
+    <script src='./socket.js'></script>
+    <script src='./main.js' defer></script>
+    
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body oncontextmenu="return false">
+    
+    <div class='Game-Holder'>
+        <canvas class='Game-Screen'></canvas>
+    </div>
+
+</body>
+</html>
